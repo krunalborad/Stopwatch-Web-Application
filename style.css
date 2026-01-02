@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #040404, #101010);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(235, 233, 233, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.stopwatch {
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#startStop {
+    background: #97286e;
+    color: rgb(209, 18, 136);
+}
+
+#reset {
+    background: #42b042;
+    color: rgb(242, 240, 240);
+}
+
+#lap {
+    background: #e94c1d;
+    color: rgb(237, 233, 233);
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#lapList {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#lapList li {
+    background: #cf0d0d;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
